@@ -1,0 +1,58 @@
+>画像タイプ(これ以外の画像タイプは使用しない)
+アイコン    icon
+写真        pic
+背景        bg
+テキスト    txt
+ボタン      btn
+動画        mov
+
+############################################################
+
+>ファイル管理
+
+media
+>img
+    >page
+    >page
+>video
+    >page
+    >page
+
+############################################################
+
+>命名規則
+
+
+サイト共通
+
+画像タイプ_文字列
+例
+icon_twitter.png
+icon_facebook.png
+
+##########
+
+サイト共通モジュール
+
+Block_Element
+
+例
+header_item1.png
+header_item2.png
+footer_logo.svg
+
+or
+
+Block_Element_画像タイプ
+
+例
+header_item_icon1.png
+header_item_icon2.png
+
+or
+
+Block_Element_Modifier
+
+例
+header_item_active.png
+main_form_button.png

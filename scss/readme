@@ -1,0 +1,41 @@
+scss設計のルール
+
+base   -ベースとなるスタイルが定義されているscssファイルを格納する
+例
+_bass.scss      -サイト共通のスタイルを記述する
+_reset.scss     -予め決まっているスタイルをリセットする(基本的には触らない)
+
+mixin   -mixinが定義されているscssファイルを格納する
+　　　　　　（要説明）
+例
+_button.scss    -共通するボタンのスタイルを記述する
+_font.scss      -フォントを読み込むscssを記述する
+
+module  -サイト共通で使用するモジュール別にスタイルが定義さているSCSSファイルを格納する
+例
+_header.scss
+_footer.scss
+_menu.scss
+
+plugin  -外部プラグインのスタイルを格納する
+例
+circlerotate.css
+
+page    -ページ単位で使用するスタイルが定義さているSCSSファイルを格納する
+例
+page
+    >home
+        >block
+            main.scss
+            mainvisual.scss
+        style.scss
+    >about
+        >block
+            main.scss
+            form.scss
+        style.scss
+
+setting -初期設定で必要なパラメータなどが定義されているSCSSファイルを格納する
+例
+_config.scss(基本的に触らない)
+_function.scss(基本的に触らない)

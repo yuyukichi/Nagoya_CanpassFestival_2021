@@ -1,0 +1,48 @@
+基本的な記述
+
+.block{
+    //blockのスタイル
+    &__element{
+        //elementのスタイル
+        img{
+            //インラインレベルのタグはタグで指定
+        }
+        &-modifier{
+            //modifireのスタイル
+        }
+        &:hover{
+            //elementをホバーした時のスタイル
+        }
+        &:active[
+            //elementをクリックした時のスタイル
+        ]
+    }
+    &__element{
+        //2つ目以降のelementも同様に記述する
+    }
+}
+
+############################################################
+
+&について
+
+&を先頭につけることで親要素の命名を参照できる
+例
+
+.block{
+    width:200px;
+    &__element{
+        color:red;
+        &-modifier{
+            font-size:20px;
+        }
+    }
+}
+
+このような場合cssにすると
+
+.block{width:200px;}
+.block__element{color:red;}
+.block__element-modifier{font-size:20px;}
+
+のようになる。
