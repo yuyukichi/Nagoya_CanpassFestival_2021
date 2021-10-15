@@ -228,43 +228,46 @@ ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100vw;
   height: 13vh;
   background: #1c2e3c;
   font-family: bilo;
   font-weight: 600;
   color: #fefefe;
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
 }
 
 .header__logo {
   float: left;
   width: 15%;
+  margin-left: 2vw;
 }
 
 .gnav__item {
-  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-right: 2vw;
 }
 
 .gnav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 20px;
   color: #fefefe;
-}
-
-.gnav__link:hover {
-  color: #9cfffa;
-  text-shadow: 0px 0px 4px 4px #9cfffa;
 }
 
 .gnav__icon {
