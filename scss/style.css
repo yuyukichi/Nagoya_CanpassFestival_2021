@@ -240,7 +240,7 @@ ul, li {
   font-family: bilo;
   font-weight: 600;
   color: #fefefe;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-style: normal;
 }
 
@@ -271,9 +271,24 @@ ul, li {
 }
 
 .gnav__icon {
-  width: 30px;
+  width: 2.4vw;
   padding-right: 5px;
 }
 
 /* setting */
+/* page */
+.main {
+  width: 100vw;
+  height: 87vh;
+  background-color: #011a2e;
+  text-decoration: none;
+}
+
+.main__content {
+  font-family: bilo;
+  font-weight: 200;
+  color: #fefefe;
+  font-size: 1vh;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
