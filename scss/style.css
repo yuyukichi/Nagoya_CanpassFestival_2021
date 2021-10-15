@@ -240,7 +240,7 @@ ul, li {
   font-family: bilo;
   font-weight: 600;
   color: #fefefe;
-  font-size: 24px;
+  font-size: 1.7vw;
   font-style: normal;
 }
 
@@ -271,7 +271,7 @@ ul, li {
 }
 
 .gnav__icon {
-  width: 30px;
+  width: 2.4vw;
   padding-right: 5px;
 }
 
