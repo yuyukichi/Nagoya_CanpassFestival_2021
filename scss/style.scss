@@ -5,6 +5,10 @@
 /* base */
 @import "./base/reset";
 
+/* mixin */
+@import "./mixin/color";
+@import "./mixin/font";
+
 /* module */
 @import "./module/header";
 
