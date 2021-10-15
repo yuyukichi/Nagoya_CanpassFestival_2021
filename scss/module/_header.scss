@@ -1,0 +1,18 @@
+.header {
+    width: 100vw;
+    height: 15vh;
+    background: #1c2e3c;
+    display: flex;
+    &__logo {
+        width: 15%;
+        margin-left: 5%;
+    }
+    .gnav {
+        &__item {
+            display: flex;
+        }
+        &__list {
+            display: flex;
+        }
+    }
+}
