@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 13vh;
+    background: $header_background;
+    @include bilo_bold(24px);
+    &__logo {
+        float: left;
+        width: 15%;
+        margin-left: 2vw;
+    }
+}
+.gnav {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        margin-right: 2vw;
+    }
+    &__link {
+        display: flex;
+        margin-left: 20px;
+        color: $font;
+    }
+    &__icon {
+        width: 30px;
+        padding-right: 5px;
+    }
+}

@@ -1,0 +1,17 @@
+@import url(https://use.typekit.net/qrm5hnm.css);
+
+@mixin bilo_regular($font-size) {
+    font-family: bilo;
+    font-weight: 200;
+    color: $font;
+    font-size: $font-size;
+    font-style: normal;
+}
+
+@mixin bilo_bold($font-size){
+    font-family: bilo;
+    font-weight: 600;
+    color: $font;
+    font-size: $font-size;
+    font-style: normal;
+}
