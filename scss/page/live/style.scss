@@ -7,3 +7,11 @@
         @include bilo_regular(1vh);
     }
 }
+.list__item {
+    background-color: $header_background;
+}
+.item__textbox {
+    & h1{
+        font-size: 1.2vw;
+    }
+}
