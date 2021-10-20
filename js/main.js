@@ -3,3 +3,9 @@ $('.gnav__link').hover(function () {
 }, function () {
     $(this).css('text-shadow', 'none');
 });
+
+$(function(){
+    setTimeout(() => {
+        $('.opening').fadeOut();
+    }, 3000);
+});
