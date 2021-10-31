@@ -1,3 +1,4 @@
+@import "../../style.scss";
 .main {
     width: 100vw;
     height: 87vh;
@@ -59,6 +60,7 @@
         & p{
             font-size: 1.3vw;
             line-height: 3vh;
+            font-family: sans-serif;
         }
     }
     &__link {
