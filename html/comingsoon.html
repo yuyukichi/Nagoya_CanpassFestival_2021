@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">
+        // ページの読み込み完了を待たずに即実行する処理
+        function no_scroll() {
+            // PCでのスクロール禁止
+            document.addEventListener("mousewheel", scroll_control, {
+                passive: false
+            });
+            // スマホでのタッチ操作でのスクロール禁止
+            document.addEventListener("touchmove", scroll_control, {
+                passive: false
+            });
+        }
+        no_scroll()
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
