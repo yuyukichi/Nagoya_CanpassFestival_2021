@@ -5,8 +5,7 @@
     width: 100vw;
     height: 13vh;
     background: $header_background;
-    @include bilo_bold(1.7vw
-    );
+    @include bilo_bold(1.7vw);
     &__logo {
         float: left;
         width: 15%;

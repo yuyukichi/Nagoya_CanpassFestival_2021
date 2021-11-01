@@ -4,6 +4,7 @@
 
 /* base */
 @import "./base/reset";
+@import "./base/base";
 
 /* mixin */
 @import "./mixin/color";
@@ -16,3 +17,4 @@
 
 /* page */
 @import "./page/live/style.scss";
+@import "./page/work";
