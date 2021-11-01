@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    no_scroll()
+});
+
 var nowDate = moment();
 var toDate = moment('2021/12/05 00:00:00');
 
