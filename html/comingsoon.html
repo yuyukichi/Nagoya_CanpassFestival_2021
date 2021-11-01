@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/plugin/reset.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../scss/page/comingsoon/comingsoon.css">
+    <link rel="stylesheet" href="../scss/page/about/comingsoon/comingsoon.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 
     <title>Document</title>
@@ -76,16 +76,7 @@
         <div class="comingsoonText">
             <h1>ComingSoon...</h1>
             <h2>開演までもうしばらくお待ちください。</h2>
-            <p>...search for index files</p>
-            <p>...index file found</p>
-            <p>...under verification</p>
-            <p>...file complete</p>
-            <p>...transferring to Nagoya campus now</p>
-            <p>...complete</p>
-            <p>...loading an image file</p>
-            <p>...image file found</p>
-            <p>...all files found</p>
-            <p>...coming soon</p>
+            <span id="js-typing-target" style="white-space: pre;"></span>
         </div>
     </div>
     <div class="countAnimation">
@@ -95,13 +86,15 @@
         <div class="rotateBox">
             <img class="rotateBox_rotate" src="../media/img/pic_comingsoon.svg">
         </div>
-        <h1 class="test" id="residueTime"></h1>
+        <div class="time" id="residueTime"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
-    <script src="../js/progressbar.js"></script>
-    <script src="../js/comingsoon.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
+    <script src="../js/plugin/moment.min.js"></script>
+    <script src="../js/plugin/progressbar.js"></script>
+    <script src="../js/comingsoon/comingsoon.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,333 @@
+html {
+  width: 1000px;
+  height: 1200px;
+}
+
+html html,
+html body {
+  overflow: hidden;
+}
+
+body {
+  background-color: #021422;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.message {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 55%;
+  left: 30%;
+}
+
+@media (max-width: 680px) {
+  .message {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .message {
+    display: none;
+  }
+}
+
+#logo {
+  position: absolute;
+  top: -70%;
+  left: 8%;
+  fill: white;
+  width: 22vw;
+  height: 30vw;
+}
+
+.comingsoonText {
+  width: 40vw;
+  height: 70vw;
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 50%;
+  line-height: 2vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0.85vw;
+  font-weight: bold;
+}
+
+@media (max-width: 680px) {
+  .comingsoonText {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .comingsoonText {
+    display: none;
+  }
+}
+
+.comingsoonText .ityped-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  color: #ffffff;
+}
+
+.comingsoonText h1 {
+  font-weight: bold;
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+.comingsoonText h2 {
+  line-height: 5vw;
+  font-size: 1.5vw;
+  font-weight: lighter;
+}
+
+.comingsoonText span {
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+}
+
+#container svg {
+  stroke-linecap: round;
+  -webkit-filter: drop-shadow(0 0 5px white);
+          filter: drop-shadow(0 0 5px white);
+}
+
+.countAnimation {
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  margin-left: 55vw;
+  margin-top: 10vw;
+}
+
+@media (max-width: 680px) {
+  .countAnimation {
+    width: 70vw;
+    height: 70vw;
+    margin: 50vh auto 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .countAnimation {
+    width: 70vw;
+    height: 70vw;
+    margin: 50vh auto 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.countAnimation_circle-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.countAnimation_circle-2 {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: solid white 2px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.countAnimation .time {
+  white-space: nowrap;
+  font-size: 2.5vw;
+  text-shadow: #38b2ff 0 0 5px;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  -webkit-animation-name: animation-time;
+          animation-name: animation-time;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@media (max-width: 680px) {
+  .countAnimation .time {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .countAnimation .time {
+    font-size: 5vw;
+  }
+}
+
+.countAnimation .rotateBox {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+.countAnimation .rotateBox_rotate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+.progressbar__label {
+  font-family: bilo-regular;
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-style: oblique;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: large;
+  text-shadow: #38b2ff 0 0 5px;
+  font-size: 4.5vw;
+  opacity: 0;
+  -webkit-animation-name: animation-rabel;
+          animation-name: animation-rabel;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@media (max-width: 680px) {
+  .progressbar__label {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .progressbar__label {
+    font-size: 7vw;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animation-time {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-time {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animation-rabel {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-rabel {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=comingsoon.css.map */
