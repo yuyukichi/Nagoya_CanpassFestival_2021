@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     no_scroll()
+    alert("テスト")
 });
 
 var nowDate = moment();
