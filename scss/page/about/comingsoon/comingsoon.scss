@@ -61,6 +61,7 @@ body {
     fill: white;
     width: 22vw;
     height: 30vw;
+    pointer-events: none;
 }
 
 .comingsoonText {
@@ -108,6 +109,7 @@ body {
     svg {
         stroke-linecap: round;
         filter: drop-shadow(0 0 5px white);
+        pointer-events: none;
     }
 }
 
@@ -118,14 +120,14 @@ body {
     margin-left: 55vw;
     margin-top: 10vw;
     @include tab {
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
         margin: 50vh auto 0;
         transform: translateY(-50%);
     }
     @include sp {
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
         margin: 50vh auto 0;
         transform: translateY(-50%);
     }
