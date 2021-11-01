@@ -8,7 +8,7 @@ html {
 }
 
 $pc: 1024px; // PC
-$tab: 680px; // タブレット
+$tab: 940px; // タブレット
 $sp: 480px; // スマホ
 @mixin pc {
     @media (max-width: ($pc)) {
@@ -167,7 +167,7 @@ body {
             font-size: 5vw;
         }
         @include sp {
-            font-size: 5vw;
+            font-size: 7vw;
         }
     }
     .rotateBox {
@@ -217,7 +217,7 @@ body {
         font-size: 7vw;
     }
     @include sp {
-        font-size: 7vw;
+        font-size: 9vw;
     }
     animation-name: animation-rabel;
     animation-fill-mode: forwards;

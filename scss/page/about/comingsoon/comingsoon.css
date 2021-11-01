@@ -29,7 +29,7 @@ body {
   left: 30%;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .message {
     display: none;
   }
@@ -64,7 +64,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .comingsoonText {
     display: none;
   }
@@ -116,7 +116,7 @@ body {
   margin-top: 10vw;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .countAnimation {
     width: 70vw;
     height: 70vw;
@@ -182,7 +182,7 @@ body {
           animation-delay: 0.9s;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .countAnimation .time {
     font-size: 5vw;
   }
@@ -190,7 +190,7 @@ body {
 
 @media (max-width: 480px) {
   .countAnimation .time {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 }
 
@@ -249,7 +249,7 @@ body {
           animation-delay: 0.9s;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 940px) {
   .progressbar__label {
     font-size: 7vw;
   }
@@ -257,7 +257,7 @@ body {
 
 @media (max-width: 480px) {
   .progressbar__label {
-    font-size: 7vw;
+    font-size: 9vw;
   }
 }
 
