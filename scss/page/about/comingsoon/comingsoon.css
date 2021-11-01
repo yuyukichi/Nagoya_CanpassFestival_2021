@@ -118,8 +118,8 @@ body {
 
 @media (max-width: 940px) {
   .countAnimation {
-    width: 70vw;
-    height: 70vw;
+    width: 50vw;
+    height: 50vw;
     margin: 50vh auto 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -128,8 +128,8 @@ body {
 
 @media (max-width: 480px) {
   .countAnimation {
-    width: 70vw;
-    height: 70vw;
+    width: 50vw;
+    height: 50vw;
     margin: 50vh auto 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);

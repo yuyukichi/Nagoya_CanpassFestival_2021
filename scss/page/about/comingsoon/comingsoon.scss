@@ -118,14 +118,14 @@ body {
     margin-left: 55vw;
     margin-top: 10vw;
     @include tab {
-        width: 70vw;
-        height: 70vw;
+        width: 50vw;
+        height: 50vw;
         margin: 50vh auto 0;
         transform: translateY(-50%);
     }
     @include sp {
-        width: 70vw;
-        height: 70vw;
+        width: 50vw;
+        height: 50vw;
         margin: 50vh auto 0;
         transform: translateY(-50%);
     }
