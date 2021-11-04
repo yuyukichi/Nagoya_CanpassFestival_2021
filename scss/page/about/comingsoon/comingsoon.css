@@ -1,6 +1,6 @@
 html {
-  width: 1000px;
-  height: 1200px;
+  width: 100vw;
+  height: 100vw;
 }
 
 html html,
@@ -29,7 +29,7 @@ body {
   left: 30%;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
   .message {
     display: none;
   }
@@ -65,7 +65,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
   .comingsoonText {
     display: none;
   }
@@ -118,7 +118,7 @@ body {
   margin-top: 10vw;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
   .countAnimation {
     width: 70vw;
     height: 70vw;
@@ -184,7 +184,7 @@ body {
           animation-delay: 0.9s;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
   .countAnimation .time {
     font-size: 5vw;
   }
@@ -251,7 +251,7 @@ body {
           animation-delay: 0.9s;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 920px) {
   .progressbar__label {
     font-size: 7vw;
   }

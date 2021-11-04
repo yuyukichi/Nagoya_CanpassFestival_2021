@@ -1,6 +1,6 @@
 html {
-    width: 1000px;
-    height: 1200px;
+    width: 150vw;
+    height: 150vw;
     html,
     body {
         overflow: hidden;
@@ -8,7 +8,7 @@ html {
 }
 
 $pc: 1024px; // PC
-$tab: 940px; // タブレット
+$tab: 920px; // タブレット
 $sp: 480px; // スマホ
 @mixin pc {
     @media (max-width: ($pc)) {
@@ -24,6 +24,12 @@ $sp: 480px; // スマホ
 
 @mixin sp {
     @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin ls {
+    @media (orientation: landscape) {
         @content;
     }
 }
