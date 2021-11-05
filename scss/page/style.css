@@ -317,8 +317,22 @@ html {
   background-color: #1c2e3c;
 }
 
+.main__content#theme_image {
+  background-color: #011a2e;
+  padding-top: 25vh;
+}
+
+.main__content#theme_image .content__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../media/home/scrollt.png);
+  width: 100vw;
+  height: 160vh;
+  background-position: center;
+}
+
 .main__content#event_about {
-  height: 97vh;
+  height: 100vh;
   background-color: #1c2e3c;
 }
 
@@ -361,7 +375,7 @@ html {
 }
 
 .main__content#program {
-  height: 98vh;
+  height: 100vh;
   background-color: #011a2e;
 }
 
@@ -533,7 +547,7 @@ html {
 }
 
 .main__content#goods_and_campusimage {
-  height: 98vh;
+  height: 100vh;
   background-color: #1c2e3c;
 }
 

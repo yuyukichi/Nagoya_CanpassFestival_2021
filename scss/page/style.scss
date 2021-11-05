@@ -24,11 +24,22 @@ html {
             height: 13vh;
             background-color: $header_background;
         }
-        // &#theme_image {
-        //     background-color: $main_background;
-        // }
+        &#theme_image {
+            background-color: $main_background;
+            padding-top: 25vh;
+            & .content {
+                &__image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url(../../media/home/scrollt.png);
+                    width: 100vw;
+                    height: 160vh;
+                    background-position: center;
+                }
+            }
+        }
         &#event_about {
-            height: 97vh;
+            height: 100vh;
             background-color: $header_background;
             & .content__block {
                 height: 68vh;
@@ -65,7 +76,7 @@ html {
             }
         }
         &#program {
-            height: 98vh;
+            height: 100vh;
             background-color: $main_background;
             & .content__block {
                 height: 64vh;
@@ -212,7 +223,7 @@ html {
             }
         }
         &#goods_and_campusimage {
-            height: 98vh;
+            height: 100vh;
             background-color: $header_background;
             & .content {
                 &__block {
