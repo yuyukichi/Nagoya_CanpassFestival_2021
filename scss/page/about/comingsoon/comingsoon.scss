@@ -1,0 +1,295 @@
+html {
+    width: 150vw;
+    height: 150vw;
+    html,
+    body {
+        overflow: hidden;
+    }
+}
+
+$pc: 1024px; // PC
+$tab: 920px; // タブレット
+$sp: 480px; // スマホ
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin ls {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+body {
+    background-color: #021422;
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.message {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 30%;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+#logo {
+    position: absolute;
+    top: -70%;
+    left: 8%;
+    fill: white;
+    width: 22vw;
+    height: 30vw;
+    pointer-events: none;
+}
+
+.comingsoonText {
+    width: 40vw;
+    height: 70vw;
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 50%;
+    line-height: 2vw;
+    transform: translate(-50%, -50%);
+    font-size: 0.85vw;
+    font-weight: bold;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+    .ityped-cursor {
+        opacity: 1;
+        -webkit-animation: blink 0.3s infinite;
+        -moz-animation: blink 0.3s infinite;
+        animation: blink 0.3s infinite;
+        animation-direction: alternate;
+        color: #ffffff;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+    h2 {
+        line-height: 5vw;
+        font-size: 1.5vw;
+        font-weight: lighter;
+    }
+    span {
+        white-space: nowrap;
+        border-right: 2px solid transparent;
+    }
+}
+
+#container {
+    svg {
+        stroke-linecap: round;
+        filter: drop-shadow(0 0 5px white);
+        pointer-events: none;
+    }
+}
+
+.countAnimation {
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    margin-left: 55vw;
+    margin-top: 10vw;
+    @include tab {
+        width: 70vw;
+        height: 70vw;
+        margin: 50vh auto 0;
+        transform: translateY(-50%);
+    }
+    @include sp {
+        width: 70vw;
+        height: 70vw;
+        margin: 50vh auto 0;
+        transform: translateY(-50%);
+    }
+    &_circle-1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: solid white 2px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    &_circle-2 {
+        width: 85%;
+        height: 85%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: solid white 2px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    .time {
+        white-space: nowrap;
+        font-size: 2.5vw;
+        text-shadow: #38b2ff 0 0 5px;
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        animation-name: animation-time;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        animation-delay: 0.9s;
+        @include tab {
+            font-size: 5vw;
+        }
+        @include sp {
+            font-size: 7vw;
+        }
+    }
+    .rotateBox {
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: rotate;
+        animation-name: rotate;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+        &_rotate {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-animation-name: rotate;
+            animation-name: rotate;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+        }
+    }
+}
+
+.progressbar__label {
+    font-family: bilo-regular;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-style: oblique;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    text-shadow: #38b2ff 0 0 5px;
+    font-size: 4.5vw;
+    opacity: 0;
+    @include tab {
+        font-size: 7vw;
+    }
+    @include sp {
+        font-size: 9vw;
+    }
+    animation-name: animation-rabel;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0.9s;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation-time {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-rabel {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

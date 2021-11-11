@@ -1,20 +1,11 @@
+@charset "UTF-8";
 /*
 このファイルもしくは//Don't touchと書かれているファイルは水谷・牧野以外のメンバーが編集してはいけません。
 */
-
-
 /* base */
-
-
 /* mixin */
-
-@import "./mixin/font";
-@import "./mixin/color";
-
+@import url(https://use.typekit.net/qrm5hnm.css);
 /* module */
-
-
 /* setting */
-
-
 /* page */
+/*# sourceMappingURL=style.css.map */

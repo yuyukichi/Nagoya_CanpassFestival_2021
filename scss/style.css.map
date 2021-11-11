@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;EAEE;AAGF,UAAU;AAGV,WAAW;ACRX,OAAO,CAAC,wCAAI;ADaZ,YAAY;AAGZ,aAAa;AAGb,UAAU",
+    "sources": [
+        "style.scss",
+        "mixin/_font.scss",
+        "mixin/_color.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
