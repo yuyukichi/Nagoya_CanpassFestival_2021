@@ -15,9 +15,15 @@
     }
     &__link{
         @include bilo_bold(1.7vw);
+        &:hover{
+            @include hover;
+        }
         &-active{
             @include bilo_bold(1.7vw);
             text-shadow: 0px 0px 20px $red_shadow;
+            &:hover{
+                @include hover;
+            }
         }
     }
 }
