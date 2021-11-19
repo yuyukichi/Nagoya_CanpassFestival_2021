@@ -1,0 +1,284 @@
+@import "../style.scss";
+@font-face {
+    font-family: Aquire;
+    src: url("../../media/header/Aquire-BW0ox.otf");
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    position: fixed;
+    box-shadow: 0px 3px 10px 0px rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    &__logo {
+        background-color: $header_background;
+    }
+}
+.main {
+    height: max-content;
+    &__content {
+        @include bilo_regular(1vh);
+        width: 100vw;
+        position: relative;
+        &#header_space {
+            height: 13vh;
+            background-color: $header_background;
+        }
+        &#theme_image {
+            background-color: $main_background;
+            padding-top: 25vh;
+            & .content {
+                &__image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url(../../media/home/scrollt.png);
+                    width: 100vw;
+                    height: 160vh;
+                    background-position: center;
+                }
+            }
+        }
+        &#event_about {
+            height: 100vh;
+            background-color: $header_background;
+            & .content__block {
+                height: 68vh;
+            }
+            & .block {
+                &__textbox {
+                    height: 50vh;
+                    padding: 9vh 0;
+                    & h1 {
+                        font-size: 3vw;
+                        margin: 5vh 0;
+                    }
+                    & hr {
+                        border-style: none;
+                        height: 1vh;
+                        background-color: #fff;
+                        border-radius: 100px;
+                        box-shadow: #fff8 0px 0px 10px 3px;
+                        margin: 4vh 0;
+                    }
+                    & p {
+                        font-size: 1.4vw;
+                        font-family: sans-serif;
+                        line-height: 4.4vh;
+                        width: 42.5vw;
+                        padding-left: 0.1vw;
+                        letter-spacing: 0.144vw;
+                    }
+                }
+                &__image {
+                    margin-left: 11vw;
+                    margin-top: 18vh;
+                }
+            }
+        }
+        &#program {
+            height: 100vh;
+            background-color: $main_background;
+            & .content__block {
+                height: 64vh;
+                & hr.block__partition {
+                    border-style: none;
+                    height: 1vh;
+                    background-color: #fff;
+                    border-radius: 100px;
+                    box-shadow: #fff8 0px 0px 10px 3px;
+                    margin: 4vh 0;
+                    width: 29.5vw;
+                }
+            }
+            & .block {
+                &__title {
+                    & h1 {
+                        font-size: 3vw;
+                        margin: 5vh 0;
+                    }
+                }
+                &__list {
+                    display: inline-flex;
+                    & .list {
+                        &__item {
+                            &.-open {
+                                & i {
+                                    transform: scaleX(-0.6);
+                                }
+                            }
+                            &-partition {
+                                height: 53vh;
+                                width: 0.1vw;
+                                background-color: #fff;
+                                box-shadow: #fff8 0px 0px 10px 3px;
+                                border-radius: 100px;
+                                margin-left: 7.3vw;
+                                margin-top: 0.3vh
+                            }
+                            &:hover label{
+                                text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+                                font-weight: 300;
+                                cursor: pointer;
+                            }
+                            &:hover i{
+                                text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+                                cursor: pointer;
+                            }
+                            & h2 {
+                                font-size: 1.9vw;
+                                padding-bottom: 9.3vh;
+                            }
+                            & button {
+                                border-style: none;
+                                background-color: transparent;
+                                & label {
+                                    color: #fff;
+                                    font-size: 1.2vw;
+                                    font-family: sans-serif;
+                                    font-weight: 200;
+                                    letter-spacing: 0.08vw;
+                                    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+                                    transition: text-shadow 300ms, font-weight 300ms;
+                                }
+                                & i {
+                                    color: #fff;
+                                    font-size: 1.3vw;
+                                    transform: scaleX(0.6);
+                                    position: absolute;
+                                    left: 38.4vw;
+                                    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+                                    transition-property: text-shadow, transform;
+                                    transition-duration: 300ms;
+                                }
+                            }
+                        }  
+                        &__list{
+                            &#content_list {
+                                margin-left: 3.6vw;
+                                margin-top: 2.3vh;
+                                width: 16vw;
+                                & hr {
+                                    border-style: none;
+                                    margin: 2.5vh 0;
+                                }
+                                & .list {
+                                    &__item {
+                                        padding: 1vh 0;
+                                    }
+                                }
+                            }
+                            &#type_list {
+                                & hr {
+                                    border-style: none;
+                                }
+                            }
+                        }
+                        &__textbox {
+                            font-size: 1.5vw;
+                            margin-left: 1.8vw;
+                            letter-spacing: 0.05vw;
+                            padding: 0.5vh 1vw;
+                            font-family: sans-serif;
+                            width: 45vw;
+                            line-height: 4vh;
+                            & p {
+                                margin: 0;
+                            }
+                            & .textbox {
+                                &__text {
+                                    opacity: 1;
+                                    transition-property: opacity;
+                                    transition-duration: 600ms;
+                                    &.-hide {
+                                        opacity: 0;
+                                    }
+                                }
+                                &__textbox {
+                                    position: absolute;
+                                    left: 48vw;
+                                    top: 22vh;
+                                    background-color: $main_background;
+                                    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.5);
+                                    border-width: 3px;
+                                    border-style: solid;
+                                    border-color: #fff;
+                                    border-radius: 30px;
+                                    width: 44vw;
+                                    height: 50vh;
+                                    padding: 1vh 1vw;
+                                    opacity: 0;
+                                    transform: translate(-2vw,0vh);
+                                    transition-property: opacity, transform;
+                                    transition-duration: 600ms;
+                                    &.-open {
+                                        opacity: 1;
+                                        display: block;
+                                        transform: translate(0vw,0vh);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#goods_and_campusimage {
+            height: 100vh;
+            background-color: $header_background;
+            & .content {
+                &__block {
+                    height: 65vh;
+                    & .block {
+                        &__title {
+                            & h1 {
+                                font-size: 3vw;
+                                margin: 5vh 0;
+                            }
+                        }
+                        &__partition {
+                            border-style: none;
+                            height: 1vh;
+                            background-color: #fff;
+                            border-radius: 100px;
+                            box-shadow: #fff8 0px 0px 10px 3px;
+                            margin: 4vh 0;
+                            width: 34.5vw;
+                        }
+                        &__imagebox {
+                            display: flex;
+                            height: 53vh;
+                            width: 85vw;
+                            & .imagebox {
+                                &__item {
+                                    width: 23vw;
+                                    padding-right: 3vw;
+                                    display: grid;
+                                    & .item {
+                                        &__item {
+                                            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/768px-Solid_white.svg.png");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.content {
+    &__block {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        height: max-content;
+        &#event_about {
+            display: inline-flex;
+        }
+        padding: 0 7.5vw 3.6vh 7.5vw;
+    }
+}

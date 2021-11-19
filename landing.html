@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFestival</title>
+    <link rel="stylesheet" href="./scss/page/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <!--headerStart-->
+    <div class="header">
+        <iframe class="header__logo" src="./media/header/logo.svg" frameborder="no"></iframe>
+        <div class=".gnav">
+            <ul class="gnav__item">
+                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="home"><p class="gnav__text">HOME</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="./live/index.html"><img class="gnav__icon" src="./media/header/fuga.svg" alt="live"><p class="gnav__text">LIVE</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="timeschedule"><p class="gnav__text">TIMESCHEDULE</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="event"><p class="gnav__text">EVENT</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--headerEnd-->
+    <div class="main__content-space" id="header_space">
+    </div>
+    <div class="main">
+        <div class="main__content" id="theme_image">
+            <div class="content__image">
+            </div>
+        </div>
+        <div class="main__content" id="event_about">
+            <div class="content__block" id="event_about">
+                <div class="block__textbox">
+                    <h1>Event About</h1>
+                    <hr>
+                    <p>今年は<br>「NEXTSTAGE~その一歩でどえりゃあ世界が変わる~」<br>をキャンパススローガンで、なんたらかんたら、ながながつらつら。<br>のらりくらり、ほにゃらら、むにゃむにゃ、ほげほげ、ふがふが、ああああ。</p>
+                </div>
+                <div class="block__image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/768px-Solid_white.svg.png" alt="CampusMap">
+                </div>
+            </div>
+        </div>
+        <div class="main__content" id="program">
+            <div class="content__block" id="program">
+                <div class="block__title">
+                    <h1>Program</h1>
+                </div>
+                <hr class="block__partition">
+                <div class="block__list">
+                    <div class="list__list" id="type_list">
+                        <div class="list__item">
+                            <h2>GAME</h2>
+                        </div>
+                        <div class="list__item">
+                            <h2>EXPERIENCE</h2>
+                        </div>
+                        <div class="list__item">
+                            <h2>LIVE</h2>
+                        </div>
+                    </div>
+                    <div class="list__list" id="content_list">
+                        <div class="list__item" id="splatoon" onclick="openDescription('splatoon');">
+                            <button><label>N・Sイカすスプラ祭り！</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <div class="list__item" id="smashbros" onclick="openDescription('smashbros');">
+                            <button><label>Nブラ</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <div class="list__item" id="hitandblow" onclick="openDescription('hitandblow');">
+                            <button><label>ヒットアンドブロー</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <hr>
+                        <div class="list__item" id="presentation" onclick="openDescription('presentation');">
+                            <button><label>推しの話、聞かせての会</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <div class="list__item" id="shuchou" onclick="openDescription('shuchou');">
+                            <button><label>未成年の主張inNAGOYA</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <div class="list__item" id="gimukyouiku" onclick="openDescription('gimukyouiku');">
+                            <button><label>義務教育イズ</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                        <hr>
+                        <div class="list__item" id="campus" onclick="openDescription('campus');">
+                            <button><label>キャンパス紹介</label><i class="fal fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="list__item-partition"></div>
+                    <div class="list__textbox">
+                        <p class="textbox__text">ゲーム企画では視聴者の方も参加できるゲームを<br>いくつかご用意していますので、どなたでもご参加いただけます。<br><br>また、プレゼンテーションブースでは各生徒が持ち寄ったプレゼンを発表していただきます。<br><br><br>他にも様々な企画を用意していますので、ぜひ配信を覗きに来てください！<br>スタッフ一同心よりお待ちしております！<br><br>※これは例文です※</p>
+                        <div class="textbox__textbox" id="splatoon">
+                            <p>スプラトゥーン2を使った新しい企画です！<br>参加者は事前に決まっております<br>ナワバリバトルは現地でもオンラインでも観戦ができます！<br>ぜひ見に来てください！</p>
+                        </div>
+                        <div class="textbox__textbox" id="smashbros">
+                            <p>スマブラSPECIALを使った恒例の企画です！<br>事前申請必須の1on1大会はスマブラの実力に自信のある人はぜひご参加ください！<br>また、今回は当日参加型のフリー大乱闘も大会前に開催します！<br>実力に自信のない方や初めてプレイする方でも大歓迎！<br>是非一度足を運んでみてください！</p>
+                        </div>
+                        <div class="textbox__textbox" id="hitandblow">
+                            <p>頭脳と運、両方の要素を掛け合わせたテーブルゲーム。その大会を開催します！！<br>大会の勝者こそが名古屋キャンパスにて最強！！<br>当日参加可能なので、是非参加、拝見して楽しんでください。</p>
+                        </div>
+                        <div class="textbox__textbox" id="presentation">
+                            <p>皆さんの「推し」をプレゼンしてもらう会です！<br>好きなものを熱く語り、交流を深めましょう！<br>「推し」に対する熱い想いを聞いてみませんか？<br>※当日参加は不可です、ご了承ください</p>
+                        </div>
+                        <div class="textbox__textbox" id="shuchou">
+                            <p>TBS系のバラエティ番組『学校へ行こう!』コーナーのひとつ。学校を訪れ、そこに通う学生が屋上から思いを叫び、伝える企画をパロディした物。<br>「宮本さんに質問したい」<br>「三船さんに殺陣の演技をして欲しい」<br>「僕のクラスには渡辺は10人いる！」<br>「声真似を披露したいです！」<br>など、キャンパスの身内ネタやしょーもないこと、特技の披露まで人が傷つかないで面白いならなんでもあり！<br>みなさんが普段溜めているモヤモヤや特技を今声に変えましょうしましょう！</p>
+                        </div>
+                        <div class="textbox__textbox" id="gimukyouiku">
+                            <p>義務教育の過程(小中)で積み重ねた知識や思考を活かして解くクイズ大会です！！<br>リアルでも、オンラインでも参加可能です！<br>全15問のクイズで優勝者を決定！<br>優勝者には卒業証書をPDFで授与予定です！<br>全ての人が楽しめるクイズになっておりますので、<br>是非気軽にご参加ください！<br>○当日はKahoot!というクイズサイト使用します</p>
+                        </div>
+                        <div class="textbox__textbox" id="campus">
+                            <p>キャンパス紹介</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__content" id="goods_and_campusimage">
+            <div class="content__block" id="goods_and_campusimage">
+                <div class="block__title">
+                    <h1>Goods and CampusImage</h1>
+                </div>
+                <hr class="block__partition">
+                <div class="block__imagebox">
+                    <div class="imagebox__item">
+                        <div class="item__item"></div>
+                    </div>
+                    <div class="imagebox__item">
+                        <div class="item__item"></div>
+                    </div>
+                    <div class="imagebox__item">
+                        <div class="item__item"></div>
+                    </div>
+                    <div class="imagebox__item">
+                        <div class="item__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

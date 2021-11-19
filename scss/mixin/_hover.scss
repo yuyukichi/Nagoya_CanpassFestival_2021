@@ -1,0 +1,4 @@
+@mixin hover {
+    text-shadow: 0px 0px 20px $blue_shadow;
+    transition: 200ms;
+}

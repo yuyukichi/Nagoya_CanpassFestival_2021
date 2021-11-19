@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 13vh;
+    background: $header_background;
+    @include bilo_bold(1.7vw);
+    &__logo {
+        float: left;
+        width: 15%;
+        margin-left: 2vw;
+    }
+}
+.gnav {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 5%;
+        margin: 0;
+        margin-right: 2vw;
+    }
+    &__link {
+        margin-left: 20px;
+        color: $font;
+        &:hover{
+            @include hover;
+        }
+        &-active{
+            margin-left: 20px;
+            color: $font;
+            text-shadow: 0px 0px 10px $red_shadow;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+    &__icon {
+        width: 2.4vw;
+        padding-right: 5px;
+    }
+    &__line {
+        width: 90%;
+        box-shadow: 0px 0px 10px $blue_shadow;
+    }
+}

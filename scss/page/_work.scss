@@ -1,0 +1,70 @@
+.worknav{
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 50vw;
+    height: 10vh;
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    &__link{
+        @include bilo_bold(1.7vw);
+        &:hover{
+            @include hover;
+        }
+        &-active{
+            @include bilo_bold(1.7vw);
+            text-shadow: 0px 0px 20px $red_shadow;
+            &:hover{
+                @include hover;
+            }
+        }
+    }
+}
+
+.main{
+    background-color: $main_background;
+}
+.work{
+    margin: 0 auto;
+    width: 100vw;
+    margin-bottom: 10vh;
+    max-height: 100vh;
+    background: $header_background;
+    &__text{
+        margin: 0 auto;
+        text-align: center
+    }
+    &__title{
+        @include bilo_bold(48px);
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.1rem;
+    }
+    &__name{
+        @include bilo_bold(24px);
+        margin: 0;
+        letter-spacing: 0.1rem;
+    }
+    &__line{
+        width: 40vw;
+        size: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 20px $blue_shadow;
+    }
+    &__item{
+        display: block;
+        margin: 0 auto;
+        max-height: 83vh;
+        max-width: 100vw;
+    }
+    &-last{
+        margin-bottom: 0;
+    }
+}
