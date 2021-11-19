@@ -1,3 +1,7 @@
+@import "../style.scss";
+body{
+    background-color: $main_background;
+}
 .worknav{
     margin: 0 auto;
     margin-top: 5vh;

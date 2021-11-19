@@ -278,4 +278,118 @@ ul, li {
   -webkit-box-shadow: 0px 0px 10px #38b2ff;
           box-shadow: 0px 0px 10px #38b2ff;
 }
-/*# sourceMappingURL=style.css.map */
+
+body {
+  background-color: #011a2e;
+}
+
+.worknav {
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 50vw;
+  height: 10vh;
+}
+
+.worknav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.worknav__link {
+  font-family: bilo-bold;
+  font-weight: 600;
+  color: #fefefe;
+  font-size: 1.7vw;
+  font-style: normal;
+}
+
+.worknav__link:hover {
+  text-shadow: 0px 0px 20px #38b2ff;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.worknav__link-active {
+  font-family: bilo-bold;
+  font-weight: 600;
+  color: #fefefe;
+  font-size: 1.7vw;
+  font-style: normal;
+  text-shadow: 0px 0px 20px #ff3cad;
+}
+
+.worknav__link-active:hover {
+  text-shadow: 0px 0px 20px #38b2ff;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.main {
+  background-color: #011a2e;
+}
+
+.work {
+  margin: 0 auto;
+  width: 100vw;
+  margin-bottom: 10vh;
+  max-height: 100vh;
+  background: #1c2e3c;
+}
+
+.work__text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work__title {
+  font-family: bilo-bold;
+  font-weight: 600;
+  color: #fefefe;
+  font-size: 48px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+}
+
+.work__name {
+  font-family: bilo-bold;
+  font-weight: 600;
+  color: #fefefe;
+  font-size: 24px;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.work__line {
+  width: 40vw;
+  size: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 20px #38b2ff;
+          box-shadow: 0px 0px 20px #38b2ff;
+}
+
+.work__item {
+  display: block;
+  margin: 0 auto;
+  max-height: 83vh;
+  max-width: 100vw;
+}
+
+.work-last {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=work.css.map */
