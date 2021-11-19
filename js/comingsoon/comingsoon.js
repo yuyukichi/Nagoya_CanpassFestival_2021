@@ -17,7 +17,6 @@ function computeDuration(time) {
     const mm = m * 1000 * 60
     let s = Math.floor((time - hm - mm) / 1000)
     if (h < 100) {
-        h.toString()
         h = "0" + h
         if (h < 10) {
             h = "0" + h
