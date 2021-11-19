@@ -6,7 +6,7 @@ var nowDate = moment();
 var toDate = moment('2021/12/05 00:00:00');
 
 const residueTime = toDate.diff(nowDate) / 1000 / 60 / 60
-const residueTimePercent = 1 - (residueTime / 816)
+const residueTimePercent = 1 - (residueTime / 504)
 
 const diff = nowDate.diff(toDate)
 
@@ -89,8 +89,7 @@ fontFamily = '"Raleway", Helvetica, sans-serif';
 fontSize = '3vw';
 top = "40%";
 
-// bar.animate(residueTimePercent); // Number from 0.0 to 1.0
-bar.animate(0.7)
+bar.animate(residueTimePercent); // Number from 0.0 to 1.0
 
 ityped.init(document.querySelector('#js-typing-target'), {
     strings: ['...search for index files\n...index file found\n...under verification\n...file complete\n...transferring to Nagoya campus now\n...complete\n...loading an image file\n...image file found\n...all files found\n...Coming Soon\n...'],

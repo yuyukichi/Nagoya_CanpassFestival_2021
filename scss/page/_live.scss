@@ -1,4 +1,3 @@
-@import "../../style.scss";
 .main {
     width: 100vw;
     height: 87vh;
@@ -10,6 +9,7 @@
         position: relative;
     }
 }
+
 .content {
     &__list {
         margin: auto;
@@ -23,6 +23,7 @@
         display: flex;
     }
 }
+
 .list {
     &__item {
         width: 26vw;
@@ -41,12 +42,13 @@
         }
     }
 }
-.item{
+
+.item {
     &__textbox {
         background-color: $header_background;
         padding: 3vh 2vw;
         height: 38vh;
-        & h1{
+        & h1 {
             font-size: 3vw;
             height: 12vh;
         }
@@ -57,7 +59,7 @@
             background-color: #fff;
             border-style: none;
         }
-        & p{
+        & p {
             font-size: 1.3vw;
             line-height: 3vh;
             font-family: sans-serif;
@@ -68,7 +70,7 @@
         margin-top: 1.5vh;
         position: relative;
         height: 10vh;
-        & img{
+        & img {
             width: 11vw;
             position: absolute;
             margin: auto;
