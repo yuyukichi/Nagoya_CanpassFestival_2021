@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusFestival</title>
-    <link rel="stylesheet" href="./scss/page/style.css">
+    <title>NEXTSTAGE BY NAGOYA ~その一歩でどえりゃあ世界が変わる~</title>
+    <link rel="stylesheet" href="./scss/page/landing.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
     <!--headerStart-->
     <div class="header">
-        <iframe class="header__logo" src="./media/header/logo.svg" frameborder="no"></iframe>
-        <div class=".gnav">
+        <img class="header__logo" src="./media/header/logo.svg" frameborder="no"></img>
+        <div class="gnav">
             <ul class="gnav__item">
-                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="home"><p class="gnav__text">HOME</p></a></li>
-                <li class="gnav__list"><a class="gnav__link" href="./live/index.html"><img class="gnav__icon" src="./media/header/fuga.svg" alt="live"><p class="gnav__text">LIVE</p></a></li>
-                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="timeschedule"><p class="gnav__text">TIMESCHEDULE</p></a></li>
-                <li class="gnav__list"><a class="gnav__link" href="#"><img class="gnav__icon" src="./media/header/fuga.svg" alt="event"><p class="gnav__text">EVENT</p></a></li>
+                <li class="gnav__list"><a class="gnav__link-active" href="#"><p class="gnav__text">HOME</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="./live.html"><p class="gnav__text">LIVE</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="./timeschedule.html"><p class="gnav__text">TIMESCHEDULE</p></a></li>
+                <li class="gnav__list"><a class="gnav__link" href="./work/movie.html"><p class="gnav__text">WORK</p></a></li>
             </ul>
+            <hr class="gnav__line" noshade color="#D5FCFF">
         </div>
     </div>
     <!--headerEnd-->
@@ -136,6 +137,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/landing.js"></script>
 </body>
 </html>

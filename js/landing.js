@@ -1,9 +1,3 @@
-$('.gnav__link').hover(function () {
-    $(this).css('text-shadow', '0px 0px 4px #9cfffa');
-}, function () {
-    $(this).css('text-shadow', '0px 0px 4px #9cfffa00');
-    $(this).css('transition', 'text-shadow 300ms');
-});
 function openDescription(target) {
     let ii;
     if(document.querySelector('.textbox__textbox#'+target).classList.length !== 2) {
