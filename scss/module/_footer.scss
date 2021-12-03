@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background: $header_background;
+    &__logo {
+        height: 3vh;
+        margin-right: 10vw;
+        width: 10vw;
+        min-width: 80px;
+        margin-left: 10vw;
+    }
+    &__address {
+        color: $font;
+        font-size: 1vw;
+        text-align: left;
+    }
+}

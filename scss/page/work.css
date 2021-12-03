@@ -205,6 +205,32 @@ ul, li {
   list-style: none;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: #1c2e3c;
+}
+
+.footer__logo {
+  height: 3vh;
+  margin-right: 10vw;
+  width: 10vw;
+  min-width: 80px;
+  margin-left: 10vw;
+}
+
+.footer__address {
+  color: #fefefe;
+  font-size: 1vw;
+  text-align: left;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
