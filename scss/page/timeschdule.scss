@@ -1,0 +1,49 @@
+@import "../style.scss";
+
+$pc: 920px; // PC
+$tab: 920px; // タブレット
+$sp: 480px; // スマホ
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin ls {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+body{
+    background-color: $main_background;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    @include tab{
+        flex-direction: column;
+    }
+    width: 80vw;
+    max-width: 120vh;
+    margin: 0 auto;
+    background-color: $main_background;
+    &__schdule{
+        @include pc{
+            height: 72vh;
+        }
+        margin-top: 5vh;
+    }
+}

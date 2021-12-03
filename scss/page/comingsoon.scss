@@ -1,4 +1,21 @@
-@import "../../mixin/font";
+@import url(https://use.typekit.net/qrm5hnm.css);
+
+@mixin bilo_regular($font-size) {
+    font-family: bilo-reguler;
+    font-weight: 200;
+    color: #fefefe;
+    font-size: $font-size;
+    font-style: normal;
+}
+
+@mixin bilo_bold($font-size) {
+    font-family: bilo-bold;
+    font-weight: 600;
+    color: #fefefe;
+    font-size: $font-size;
+    font-style: normal;
+}
+
 html {
     width: 150vw;
     height: 150vw;
@@ -8,11 +25,11 @@ html {
     }
 }
 
-$pc: 1024px; // PC
+$pc: 920px; // PC
 $tab: 920px; // タブレット
 $sp: 480px; // スマホ
 @mixin pc {
-    @media (max-width: ($pc)) {
+    @media (min-width: ($pc)) {
         @content;
     }
 }
@@ -36,7 +53,7 @@ $sp: 480px; // スマホ
 }
 
 body {
-    background-color: #021422;
+    background-color: #011a2e;
     width: 100vw;
     height: 100vw;
     position: fixed;
@@ -44,7 +61,7 @@ body {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    @include bilo_regular;
+    @include bilo_bold(20px);
 }
 
 .message {
@@ -127,9 +144,12 @@ body {
     position: relative;
     margin-left: 55vw;
     margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include tab {
-        width: 70vw;
-        height: 70vw;
+        width: 50vw;
+        height: 50vw;
         margin: 50vh auto 0;
         transform: translateY(-50%);
     }
@@ -292,6 +312,5 @@ body {
         opacity: 0;
     }
 }
-
 
 /*# sourceMappingURL=main.css.map */

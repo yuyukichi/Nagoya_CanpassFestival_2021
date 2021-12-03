@@ -1,4 +1,35 @@
 @import "../style.scss";
+$pc: 920px; // PC
+$tab: 920px; // タブレット
+$sp: 480px; // スマホ
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin ls {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+body {
+    background-color: $main_background;
+}
+
 .main {
     width: 100vw;
     height: 87vh;
@@ -13,33 +44,51 @@
 
 .content {
     &__list {
-        margin: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: max-content;
-        height: max-content;
-        position: absolute;
-        display: flex;
+        @include pc {
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            display: flex;
+        }
+        @include tab {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10vh;
+        }
     }
 }
 
 .list {
     &__item {
-        width: 26vw;
-        margin: 0 2vw;
+        @include pc {
+            width: 20vw;
+            margin: 0 2vw;
+        }
+        @include tab {
+            width: 80vw;
+            margin: 0 auto;
+        }
         &-partition {
-            background-color: #fff;
-            height: 49vh;
-            width: 0.5vw;
-            box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.8);
-            border-radius: 100px;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            @include pc {
+                background-color: #fff;
+                height: 49vh;
+                width: 0.5vw;
+                box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.8);
+                border-radius: 100px;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            @include tab {
+                display: none;
+            }
         }
     }
 }
@@ -49,30 +98,60 @@
         background-color: $header_background;
         padding: 3vh 2vw;
         height: 38vh;
+        @include tab {
+            text-align: center;
+        }
         & h1 {
-            font-size: 3vw;
-            height: 12vh;
+            @include pc {
+                font-size: 2.2vw;
+                height: 12vh;
+            }
+            @include tab {
+                font-size: 5.5vw;
+                height: 12vh;
+            }
         }
         & hr {
-            width: 16vw;
+            @include pc {
+                width: 16vw;
+            }
+            @include tab {
+                width: 20vw;
+                margin: 0 auto;
+            }
             margin-left: 0;
             height: 0.2vh;
             background-color: #fff;
             border-style: none;
         }
         & p {
-            font-size: 1.3vw;
-            line-height: 3vh;
-            font-family: sans-serif;
+            @include pc {
+                font-size: 1.3vw;
+                line-height: 3vh;
+                font-family: sans-serif;
+            }
+            @include tab {
+                font-size: 2.8vw;
+                line-height: 5vh;
+                font-family: sans-serif;
+            }
         }
     }
     &__link {
         background-color: $header_background;
         margin-top: 1.5vh;
+        @include tab {
+            margin-bottom: 8vh;
+        }
         position: relative;
         height: 10vh;
         & img {
-            width: 11vw;
+            @include pc {
+                width: 11vw;
+            }
+            @include tab {
+                width: 20vw;
+            }
             position: absolute;
             margin: auto;
             left: 0;

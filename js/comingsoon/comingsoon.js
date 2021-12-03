@@ -74,8 +74,10 @@ var bar = new ProgressBar.Circle(container, {
         circle.path.setAttribute('stroke-width', state.width);
 
         var value = Math.round(circle.value() * 100);
-        if (value === 0) {
+        console.log(value)
+        if (value >= 100) {
             circle.setText('');
+            location.href = "./landing.html";
         } else {
             circle.setText(value.toString() + "%");
         }
