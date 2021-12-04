@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -326,7 +330,6 @@ ul, li {
 
 body {
   background-color: #011a2e;
-  font-family: sans-serif;
 }
 
 .main {
@@ -511,6 +514,8 @@ body {
 @media (max-width: 920px) {
   .item__link img {
     width: 20vw;
+    max-width: 10vh;
+    max-height: 2vh;
   }
 }
 /*# sourceMappingURL=live.css.map */

@@ -151,6 +151,8 @@ body {
             }
             @include tab {
                 width: 20vw;
+                max-width: 10vh;
+                max-height: 2vh;
             }
             position: absolute;
             margin: auto;
