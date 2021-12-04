@@ -64,7 +64,7 @@ $sp: 480px; // スマホ
         margin-left: 20px;
         color: $font;
         @include tab {
-            margin: 8px;
+            margin: 2vw;
         }
         &:hover {
             @include hover;

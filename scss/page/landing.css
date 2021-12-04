@@ -292,7 +292,7 @@ ul, li {
 
 @media (max-width: 920px) {
   .gnav__link {
-    margin: 8px;
+    margin: 2vw;
   }
 }
 
