@@ -38,12 +38,12 @@ $sp: 480px; // スマホ
         float: left;
         width: 15%;
         margin-left: 2vw;
-        @include tab{
+        @include tab {
             display: none;
-            
         }
     }
 }
+
 .gnav {
     &__item {
         display: flex;
