@@ -3,6 +3,32 @@
     font-family: Aquire;
     src: url("../../media/header/Aquire-BW0ox.otf");
 }
+$pc: 920px; // PC
+$tab: 920px; // タブレット
+$sp: 480px; // スマホ
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin ls {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
 html {
     scroll-behavior: smooth;
 }
@@ -18,6 +44,9 @@ html {
     height: max-content;
     &__content {
         @include bilo_regular(1vh);
+        @include tab {
+            flex-direction: column !important;
+        }
         width: 100vw;
         position: relative;
         &#header_space {
@@ -231,8 +260,15 @@ html {
                     & .block {
                         &__title {
                             & h1 {
-                                font-size: 3vw;
-                                margin: 5vh 0;
+                                @include tab {
+                                    font-size: 5vw;
+                                    margin: 2vh 0;
+                                    text-align: center;
+                                }
+                                @include pc {
+                                    font-size: 3vw;
+                                    margin: 5vh 0;
+                                }
                             }
                         }
                         &__partition {
@@ -241,18 +277,34 @@ html {
                             background-color: #fff;
                             border-radius: 100px;
                             box-shadow: #fff8 0px 0px 10px 3px;
-                            margin: 4vh 0;
+                            @include pc {
+                                margin: 4vh 0;
+                            }
+                            @include tab {
+                                margin: 2vh auto;
+                            }
                             width: 34.5vw;
                         }
                         &__imagebox {
                             display: flex;
                             height: 53vh;
                             width: 85vw;
+                            @include tab {
+                                flex-direction: column;
+                            }
                             & .imagebox {
                                 &__item {
-                                    width: 23vw;
-                                    padding-right: 3vw;
+                                    @include pc {
+                                        width: 23vw;
+                                        padding-right: 3vw;
+                                    }
+                                    @include tab {
+                                        max-width: 90vw;
+                                        height: 30vh;
+                                        padding-top: 2vh;
+                                    }
                                     display: grid;
+
                                     & .item {
                                         &__item {
                                             background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/768px-Solid_white.svg.png");
