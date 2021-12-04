@@ -31,26 +31,39 @@ body {
 }
 
 .worknav {
+    position: relative;
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    width: 50vw;
+    width: 100vw;
     height: 10vh;
     &__item {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
         height: 100%;
         margin: 0 auto;
         padding: 0;
-        max-width: 30vw;
+        max-width: 50vw;
+        gap: 4px 30px;
     }
     &__link {
+        text-align: center;
+        @include tab {
+            font-size: 20px;
+        }
         @include bilo_bold(1.7vw);
         &:hover {
             @include hover;
         }
         &-active {
+            @include tab {
+                font-size: 20px;
+            }
             @include bilo_bold(1.7vw);
             text-shadow: 0px 0px 20px $red_shadow;
             &:hover {
