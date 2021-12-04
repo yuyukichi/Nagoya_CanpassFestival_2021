@@ -92,13 +92,14 @@ html {
                     }
                     @include tab {
                         padding: 2vh 0;
+                        font-size: 24px;
                     }
                     & h1 {
                         @include pc {
                             font-size: 3vw;
                         }
                         @include tab {
-                            font-size: 5vw;
+                            font-size: 6vw;
                         }
                         margin: 5vh 0;
                     }
@@ -120,7 +121,7 @@ html {
                             letter-spacing: 0.144vw;
                         }
                         @include tab {
-                            font-size: 2vw;
+                            font-size: 4vw;
                         }
                     }
                 }
@@ -469,6 +470,7 @@ html {
         margin-left: 30vw;
     }
 }
+
 @include tab {
     #goods_and_campusimage {
         display: none;

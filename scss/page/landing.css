@@ -413,6 +413,7 @@ html {
 @media (max-width: 920px) {
   .main__content#event_about .block__textbox {
     padding: 2vh 0;
+    font-size: 24px;
   }
 }
 
@@ -428,7 +429,7 @@ html {
 
 @media (max-width: 920px) {
   .main__content#event_about .block__textbox h1 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
@@ -458,7 +459,7 @@ html {
 
 @media (max-width: 920px) {
   .main__content#event_about .block__textbox p {
-    font-size: 2vw;
+    font-size: 4vw;
   }
 }
 
