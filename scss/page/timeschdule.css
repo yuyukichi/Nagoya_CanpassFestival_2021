@@ -340,8 +340,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80vw;
-  max-width: 120vh;
-  max-height: 80vh;
   margin: 0 auto;
   background-color: #011a2e;
 }
@@ -356,6 +354,8 @@ body {
 }
 
 .main__schdule {
+  max-width: 120vh;
+  max-height: 80vh;
   margin-top: 5vh;
 }
 

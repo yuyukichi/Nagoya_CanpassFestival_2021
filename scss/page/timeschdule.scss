@@ -37,11 +37,11 @@ body {
         flex-direction: column;
     }
     width: 80vw;
-    max-width: 120vh;
-    max-height: 80vh;
     margin: 0 auto;
     background-color: $main_background;
     &__schdule {
+        max-width: 120vh;
+        max-height: 80vh;
         @include pc {
             height: 72vh;
         }
