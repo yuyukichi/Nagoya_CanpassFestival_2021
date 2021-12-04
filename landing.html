@@ -63,7 +63,8 @@
                     <h1>Event About</h1>
                     <p>「NEXTSTAGE~その一歩でどえりゃあ世界が変わる~」
                         <br> 今年のキャンフェスはNEXTSTAGEをスローガンに、新しい自分を発見できるようにという願いを込めました。
-                        <br> また、オンラインでも開催しているのでサイバー感の強い世界観にしています。</p>
+                        <br> また、オンラインでも開催しているのでサイバー感の強い世界観にしています。
+                    </p>
                 </div>
                 <div class="block__image">
                     <img class="block__map" src="./media/home/map.png" alt="CampusMap">
@@ -71,166 +72,192 @@
             </div>
         </div>
         <div class="main__content" id="program">
-            <div class="content__block" id="">
-                <div class="block__title">
-                    <h1>Program</h1>
-                </div>
-                <hr class="block__partition">
-                <div class="block__list">
-                    <div class="list__list" id="type_list">
-                        <div class="list__item">
-                            <h2>GAME</h2>
-                        </div>
-                        <div class="list__item">
-                            <h2>EXPERIENCE</h2>
-                        </div>
-                        <div class="list__item">
-                            <h2>OTHER</h2>
-                        </div>
+            <div class="main__content" id="program">
+                <div class="content__block" id="program">
+                    <div class="block__title">
+                        <h1>Program</h1>
                     </div>
-                    <div class="list__list" id="content_list">
-                        <div class="list__item" id="splatoon" onclick="openDescription('splatoon');">
-                            <button><label>N・Sイカすスプラ祭り!</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <div class="list__item" id="smashbros" onclick="openDescription('smashbros');">
-                            <button><label>Nブラ</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <div class="list__item" id="hitandblow" onclick="openDescription('hitandblow');">
-                            <button><label>ヒットアンドブロー</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <hr>
-                        <div class="list__item" id="presentation" onclick="openDescription('presentation');">
-                            <button><label>推しの話、聞かせての会</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <div class="list__item" id="shuchou" onclick="openDescription('shuchou');">
-                            <button><label>未成年の主張inNAGOYA</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <div class="list__item" id="gimukyouiku" onclick="openDescription('gimukyouiku');">
-                            <button><label>義務教育イズ</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <hr>
-                        <div class="list__item" id="campus" onclick="openDescription('campus');">
-                            <button><label>キャンパス紹介</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                        <div class="list__item" id="attention" onclick="openDescription('attention');">
-                            <button><label>注意事項</label><i class="fal fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="list__item-partition"></div>
-                    <div class="list__textbox textbox__tmp">
-                        <p class="textbox__text">体験企画はL教室ステージで開催！<br> ステージで言いたいことを叫んだり、プレゼンしたり。
-                            <br> 義務教育イズ大会も開催するのでお気軽にご参加ください！
-                            <br> ゲーム企画では
-                            <br> 毎年恒例のスマブラ大会に加えスプラトゥーン大会も開催！
-                            <br> さらに飛び込みOKのボードゲーム、ヒットアンドブローも行います！
-                            <br> 展示企画では
-                            <br> キャンパスのクリエイターの作品や歌ってみたが展示されます！
-                            <br> 是非ご覧ください！
-                            <br>
-
+                    <hr class="block__partition">
+                    <div class="block__list">
+                        <table>
+                            <tbody>
+                                <tr id="default" class="-open list__item">
+                                    <td></td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td class="list__item">
+                                        <label id="program_category">GAME</label>
+                                    </td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="splatoon" onclick="openDescription('splatoon');">
+                                            <button><label>N・Sイカすスプラ祭り！</label><i
+                                                    class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td></td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="smashbros" onclick="openDescription('smashbros');">
+                                            <button><label>Nブラ</label><i class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td></td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="hitandblow" onclick="openDescription('hitandblow');">
+                                            <button><label>ヒットアンドブロー</label><i
+                                                    class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td class="list__item">
+                                        <label id="program_category">
+                                            EXPERIENCE
+                                        </label>
+                                    </td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="presentation" onclick="openDescription('presentation');">
+                                            <button><label>推しの話、聞かせての会</label><i
+                                                    class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td></td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="shuchou" onclick="openDescription('shuchou');">
+                                            <button><label>未成年の主張inNAGOYA</label><i
+                                                    class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td></td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="gimukyouiku" onclick="openDescription('gimukyouiku');">
+                                            <button><label>義務教育イズ</label><i class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td class="list__item">
+                                        <label id="program_category">LIVE</label>
+                                    </td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="campus" onclick="openDescription('campus');">
+                                            <button><label>キャンパス紹介</label><i class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="list__list" id="program_table_row">
+                                    <td class="list__item">
+                                        <label id="program_category">OTHER</label>
+                                    </td>
+                                    <td class="list__item">
+                                        <div class="list__item" id="attention" onclick="openDescription('attention');">
+                                            <button><label>注意事項</label><i class="fal fa-chevron-right"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="list__item-partition"></div>
+                        <div class="list__textbox">
+                            <p class="textbox__text">
+                                体験企画はL教室ステージで開催！<br>ステージで言いたいことを叫んだり、プレゼンしたり。<br>義務教育イズ大会も開催するのでお気軽に<br>ご参加ください！<br>ゲーム企画では<br>毎年恒例のスマブラ大会に加えスプラトゥーン大会も<br>開催！<br>さらに飛び込みOKのボードゲーム、<br>ヒットアンドブローも行います！<br>展示企画では<br>キャンパスのクリエイターの作品や歌ってみたが<br>展示されます！<br>是非ご覧ください！
+                            </p>
+                            <div class="textbox__textbox" id="default">
+                                <p>体験企画はL教室ステージで開催！<br>ステージで言いたいことを叫んだり、プレゼンしたり。<br>義務教育イズ大会も開催するのでお気軽に<br>ご参加ください！<br>ゲーム企画では<br>毎年恒例のスマブラ大会に加えスプラトゥーン大会も<br>開催！<br>さらに飛び込みOKのボードゲーム、<br>ヒットアンドブローも行います！<br>展示企画では<br>キャンパスのクリエイターの作品や歌ってみたが<br>展示されます！<br>是非ご覧ください！
+                                </p>
+                            </div>
                             <div class="textbox__textbox" id="splatoon">
-                                <p>スプラトゥーン2を使った新しい企画です！<br>参加者は事前に決まっております<br>ナワバリバトルは現地でもオンラインでも観戦ができます！<br>ぜひ見に来てください！</p>
+                                <p>スプラトゥーン2を使った新しい企画です！<br>参加者は事前に決まっております<br>ナワバリバトルは現地でもオンラインでも<br>観戦ができます！<br>ぜひ見に来てください！
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="smashbros">
-                                <p>スマブラSPECIALを使った恒例の企画です！<br>事前申請必須の1on1大会はスマブラの実力に自信のある人はぜひご参加ください！<br>また、今回は当日参加型のフリー大乱闘も大会前に開催します！<br>実力に自信のない方や初めてプレイする方でも大歓迎！<br>是非一度足を運んでみてください！</p>
+                                <p>スマブラSPECIALを使った恒例の企画です！<br>事前申請必須の1on1大会はスマブラの実力に自信のある人はぜひご参加ください！<br>また、今回は当日参加型のフリー大乱闘も<br>大会前に開催します！<br>実力に自信のない方や初めてプレイする方でも大歓迎！<br>是非一度足を運んでみてください！
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="hitandblow">
-                                <p>頭脳と運、両方の要素を掛け合わせたテーブルゲーム。その大会を開催します！！<br>大会の勝者こそが名古屋キャンパスにて最強！！<br>当日参加可能なので、是非参加、拝見して楽しんでください。</p>
+                                <p>頭脳と運、両方の要素を掛け合わせたテーブルゲーム。その大会を開催します！！<br>大会の勝者こそが名古屋キャンパスにて最強！！<br>当日参加可能なので、是非<br>参加、拝見して楽しんでください。
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="presentation">
-                                <p>皆さんの「推し」をプレゼンしてもらう会です！<br>好きなものを熱く語り、交流を深めましょう！<br>「推し」に対する熱い想いを聞いてみませんか？<br>※当日参加は不可です、ご了承ください</p>
+                                <p>皆さんの「推し」をプレゼンしてもらう会です！<br>好きなものを熱く語り、交流を深めましょう！<br>「推し」に対する熱い想いを聞いてみませんか？<br>※当日参加は不可です、ご了承ください
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="shuchou">
-                                <p>TBS系のバラエティ番組『学校へ行こう!』コーナーのひとつ。学校を訪れ、そこに通う学生が屋上から思いを叫び、伝える企画をパロディした物。<br>「宮本さんに質問したい」<br>「三船さんに殺陣の演技をして欲しい」<br>「僕のクラスには渡辺は10人いる！」<br>「声真似を披露したいです！」<br>など、キャンパスの身内ネタやしょーもないこと、特技の披露まで人が傷つかないで面白いならなんでもあり！<br>みなさんが普段溜めているモヤモヤや特技を今声に変えましょう！</p>
+                                <p>TBS系のバラエティ番組『学校へ行こう!』コーナーのひとつ。学校を訪れ、そこに通う学生が屋上から思いを叫び、伝える企画をパロディした物。<br>「宮本さんに質問したい」<br>「三船さんに殺陣の演技をして欲しい」<br>「僕のクラスには渡辺は10人いる！」<br>「声真似を披露したいです！」<br>など、キャンパスの身内ネタやしょーもないこと、特技の披露まで人が傷つかないで面白いならなんでもあり！<br>みなさんが普段溜めているモヤモヤや特技を今、<br>声に変えましょう！
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="gimukyouiku">
-                                <p>義務教育の過程(小中)で積み重ねた知識や思考を活かして解くクイズ大会です！！<br>リアルでも、オンラインでも参加可能です！<br>全15問のクイズで優勝者を決定！<br>優勝者には卒業証書をPDFで授与予定です！<br>全ての人が楽しめるクイズになっておりますので、<br>是非気軽にご参加ください！<br>○当日はKahoot!というクイズサイト使用します</p>
+                                <p>義務教育の過程(小中)で積み重ねた知識や思考を活かして解くクイズ大会です！！<br>リアルでも、オンラインでも参加可能です！<br>全15問のクイズで優勝者を決定！<br>優勝者には卒業証書をPDFで授与予定です！<br>全ての人が楽しめるクイズになっておりますので、<br>是非気軽にご参加ください！<br>○当日はKahoot!というクイズサイト使用します
+                                </p>
                             </div>
                             <div class="textbox__textbox" id="campus">
-                                <p>名古屋キャンパスは<br> 上下関係なく自分たちの興味のある活動に意欲的に取り組んでいるキャンパスです！
-                                    <br> 職員と生徒、TAと生徒の距離が近くなんでも相談しあえて自分を高められる環境です。
+                                <p>名古屋キャンパスは<br>上下関係なく自分たちの興味のある活動に意欲的に<br>取り組んでいるキャンパスです！<br>職員と生徒、TAと生徒の距離が近くなんでも相談しあえて自分を高められる環境です。
                                 </p>
                             </div>
                             <div class="textbox__textbox" id="attention">
-                                <p>キャンパスにお越しの際は必ずマスクを着用してください。<br> また、キャンパス内での食事はできませんので、予め済ましておくように願いします。
-                                    <br> そのほかにわからないことがあればキャンパス内にいるカードを下げているスタッフまでお申し付けください。
+                                <p>キャンパスにお越しの際は必ず<br>マスクを着用してください。<br>また、キャンパス内での食事はできませんので、<br>予め済ましておくように願いします。<br>そのほかにわからないことがあれば<br>キャンパス内にいるカードを下げているスタッフまで<br>お申し付けください。
                                 </p>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main__content" id="goods_and_campusimage">
-            <div class="content__block" id="goods_and_campusimage">
-                <div class="block__title">
-                    <h1>Goods and CampusImage</h1>
+            <div class="pron__link">
+                <div class="box2">
+                    <a href="http://project-n.org/cms/"><img src="media/home/pron.png" alt="" id="pron"></a>
                 </div>
-                <hr class="block__partition">
-                <div class="block__imagebox">
-                    <div class="imagebox__item">
-                        <div class="item__item"></div>
-                    </div>
-                    <div class="imagebox__item">
-                        <div class="item__item"></div>
-                    </div>
-                    <div class="imagebox__item">
-                        <div class="item__item"></div>
-                    </div>
-                    <div class="imagebox__item">
-                        <div class="item__item"></div>
-                    </div>
+            </div>
+            <style>
+                .pron__link {
+                    background-color: #011a2e;
+                    width: 100vw;
+                    height: 30vh;
+                    display: block;
+                    margin: 0px;
+                    position: relative;
+                }
+                
+                #pron {
+                    width: 30vw;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                }
+                
+                .box2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 40vw;
+                    padding: 0.5em 1em;
+                    font-weight: bold;
+                    color: #6091d3;
+                    /*文字色*/
+                    background: #FFF;
+                    border: solid 3px #6091d3;
+                    /*線*/
+                    border-radius: 10px;
+                    /*角の丸み*/
+                }
+            </style>
+            <div class="footer">
+                <img class="footer__logo" src="./media/header/logo.svg" alt="logo">
+                <div class="footer__address">
+                    <p>〒460-0004 愛知県名古屋市中区新栄町2-3 YWCAビル5階</p>
                 </div>
             </div>
         </div>
-        <div class="pron__link">
-            <div class="box2">
-                <a href="http://project-n.org/cms/"><img src="media/home/pron.png" alt="" id="pron"></a>
-            </div>
-        </div>
-        <style>
-            .pron__link {
-                background-color: #011a2e;
-                width: 100vw;
-                height: 30vh;
-                display: block;
-                margin: 0px;
-                position: relative;
-            }
-            
-            #pron {
-                width: 30vw;
-                height: auto;
-                display: block;
-                margin: auto;
-            }
-            
-            .box2 {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 40vw;
-                padding: 0.5em 1em;
-                font-weight: bold;
-                color: #6091d3;
-                /*文字色*/
-                background: #FFF;
-                border: solid 3px #6091d3;
-                /*線*/
-                border-radius: 10px;
-                /*角の丸み*/
-            }
-        </style>
-    </div>
-    <div class="footer">
-        <img class="footer__logo" src="./media/header/logo.svg" alt="logo">
-        <div class="footer__address">
-            <p>〒460-0004 愛知県名古屋市中区新栄町2-3 YWCAビル5階</p>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/landing.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./js/landing.js"></script>
 </body>
 
 </html>

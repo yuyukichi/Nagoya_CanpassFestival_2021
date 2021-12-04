@@ -247,14 +247,21 @@ ul, li {
   font-family: bilo-bold;
   font-weight: 600;
   color: #fefefe;
-  font-size: 1.7vw;
+  font-size: 20px;
   font-style: normal;
+  font-size: 20px;
 }
 
 .header__logo {
   float: left;
   width: 15%;
   margin-left: 2vw;
+}
+
+@media (max-width: 920px) {
+  .header__logo {
+    display: none;
+  }
 }
 
 .gnav__item {
@@ -416,5 +423,27 @@ body {
 
 .work-last {
   margin-bottom: 0;
+}
+
+.music {
+  text-align: center;
+  width: 35vw;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.music {
+  display: block;
+  min-width: 35vw;
+  min-height: 40vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+  .music {
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=work.css.map */

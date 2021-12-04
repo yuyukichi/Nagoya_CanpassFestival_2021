@@ -48,7 +48,6 @@ html {
 .main {
     height: max-content;
     &__content {
-        display: flex;
         @include tab {
             flex-direction: column;
         }
@@ -68,7 +67,7 @@ html {
                     background-repeat: no-repeat;
                     background-image: url(../../media/home/background.png);
                     width: 100vw;
-                    height: 175vh;
+                    height: 180vh;
                     background-position: center;
                 }
             }
@@ -150,41 +149,69 @@ html {
             @include tab {
                 width: 100vw;
                 height: 120vh;
-                display: none;
             }
             background-color: $main_background;
             & .content__block {
-                height: 64vh;
+                height: 90vh;
                 & hr.block__partition {
                     border-style: none;
                     height: 1vh;
                     background-color: #fff;
                     border-radius: 100px;
                     box-shadow: #fff8 0px 0px 10px 3px;
-                    margin: 4vh 0;
-                    width: 29.5vw;
+                    @include pc {
+                        margin: 4vh 0;
+                    }
+                    @include tab {
+                        margin: 2vh auto;
+                    }
+                    width: 40vw;
                 }
                 @include tab {
-                    bottom: 30%;
+                    bottom: 10%;
                 }
             }
             & .block {
                 &__title {
                     & h1 {
-                        font-size: 3vw;
-                        margin: 5vh 0;
+                        @include tab {
+                            font-size: 4vw;
+                            margin: 2vh 0;
+                            text-align: center;
+                        }
+                        @include pc {
+                            font-size: 2vw;
+                            margin: 5vh 0;
+                        }
                     }
                 }
                 &__list {
                     display: flex;
+                    @include tab {
+                        flex-direction: column;
+                    }
+                    & table {
+                        width: 40vw;
+                        @include tab() {
+                            height: 30vh;
+                        }
+                    }
                     & .list {
                         &__item {
+                            & label#program_category {
+                                font-size: 2vw;
+                                font-weight: 700;
+                                cursor: default;
+                                text-shadow: none;
+                                @include tab() {
+                                    font-size: 4vw;
+                                }
+                            }
                             &.-open {
                                 & i {
                                     transform: scaleX(-0.6);
                                     @include tab {
-                                        padding: 0%;
-                                        transform: scaleX(-0.6);
+                                        transform: rotateZ(90deg);
                                     }
                                 }
                             }
@@ -194,10 +221,12 @@ html {
                                 background-color: #fff;
                                 box-shadow: #fff8 0px 0px 10px 3px;
                                 border-radius: 100px;
-                                margin-left: 7.35vw;
+                                margin-left: 0vw;
                                 margin-top: 0.3vh;
                                 @include tab {
-                                    display: none;
+                                    width: 90vw;
+                                    margin-top: 2vh;
+                                    height: 0.1vh;
                                 }
                             }
                             &:hover label {
@@ -224,6 +253,10 @@ html {
                                     letter-spacing: 0.08vw;
                                     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
                                     transition: text-shadow 300ms, font-weight 300ms;
+                                    white-space: nowrap;
+                                    @include tab() {
+                                        font-size: 3vw;
+                                    }
                                 }
                                 & i {
                                     color: #fff;
@@ -235,7 +268,8 @@ html {
                                     transition-property: text-shadow, transform;
                                     transition-duration: 300ms;
                                     @include tab {
-                                        left: 50vw;
+                                        font-size: 3vw;
+                                        left: 60vw;
                                     }
                                 }
                             }
@@ -244,9 +278,9 @@ html {
                             &#content_list {
                                 margin-left: 3.6vw;
                                 margin-top: 2.3vh;
-                                width: 16vw;
+                                width: 8vw;
                                 @include tab {
-                                    width: 100vh;
+                                    // width: 100vh;
                                 }
                                 & hr {
                                     border-style: none;
@@ -290,12 +324,13 @@ html {
                                     }
                                     @include tab {
                                         width: 80vw;
-                                        transform: translate(-50%, 50%);
-                                        margin-top: 40vh;
-                                        line-height: 2vh;
+                                        text-align: center;
+                                        font-size: 18px;
+                                        margin-top: 2vh;
                                     }
                                 }
                                 &__textbox {
+                                    display: none;
                                     position: absolute;
                                     left: 48vw;
                                     top: 22vh;
@@ -308,20 +343,20 @@ html {
                                     transition-property: opacity, transform;
                                     transition-duration: 600ms;
                                     @include tab {
-                                        top: 55%;
-                                        left: 50%;
-                                        transform: translate(-50%, 50%);
-                                        width: 80vw;
-                                        height: 65vw;
+                                        // top: 55%;
+                                        // left: 50%;
+                                        // transform: translate(-50%, 50%);
+                                        // width: 80vw;
+                                        // height: 65vw;
                                     }
                                     &.-open {
                                         opacity: 1;
                                         display: block;
                                         transform: translate(0vh, 0vw);
                                         @include tab {
-                                            opacity: 1;
-                                            display: block;
-                                            transform: translate(-50%, 50%);
+                                            // opacity: 1;
+                                            // display: block;
+                                            // transform: translate(-50%, 50%);
                                         }
                                     }
                                 }
@@ -385,8 +420,20 @@ html {
                                     }
                                     display: grid;
                                     & .item {
-                                        &__item {
-                                            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/768px-Solid_white.svg.png");
+                                        &__item1 {
+                                            background-image: url("/media/home/IMG_1650-強化.jpg");
+                                            background-color: #fff;
+                                        }
+                                        &__item2 {
+                                            background-image: url("/media/home/IMG_6033.jpeg");
+                                            background-color: #fff;
+                                        }
+                                        &__item3 {
+                                            background-image: url("/media/home/IMG_6033.jpeg");
+                                            background-color: #fff;
+                                        }
+                                        &__item4 {
+                                            background-image: url("/media/home/IMG_6033.jpeg");
                                             background-color: #fff;
                                         }
                                     }
@@ -420,5 +467,10 @@ html {
     margin-left: 5vw;
     @include tab {
         margin-left: 30vw;
+    }
+}
+@include tab {
+    #goods_and_campusimage {
+        display: none;
     }
 }

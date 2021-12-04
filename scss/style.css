@@ -247,14 +247,21 @@ ul, li {
   font-family: bilo-bold;
   font-weight: 600;
   color: #fefefe;
-  font-size: 1.7vw;
+  font-size: 20px;
   font-style: normal;
+  font-size: 20px;
 }
 
 .header__logo {
   float: left;
   width: 15%;
   margin-left: 2vw;
+}
+
+@media (max-width: 920px) {
+  .header__logo {
+    display: none;
+  }
 }
 
 .gnav__item {
