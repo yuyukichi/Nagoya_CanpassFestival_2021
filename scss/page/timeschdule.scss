@@ -1,5 +1,4 @@
 @import "../style.scss";
-
 $pc: 920px; // PC
 $tab: 920px; // タブレット
 $sp: 480px; // スマホ
@@ -27,21 +26,22 @@ $sp: 480px; // スマホ
     }
 }
 
-body{
+body {
     background-color: $main_background;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: space-between;
-    @include tab{
+    @include tab {
         flex-direction: column;
     }
     width: 80vw;
     max-width: 120vh;
     margin: 0 auto;
     background-color: $main_background;
-    &__schdule{
-        @include pc{
+    &__schdule {
+        @include pc {
             height: 72vh;
         }
         margin-top: 5vh;
