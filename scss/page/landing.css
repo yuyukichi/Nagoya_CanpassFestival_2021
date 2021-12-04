@@ -278,9 +278,22 @@ ul, li {
   margin-right: 2vw;
 }
 
+@media (max-width: 920px) {
+  .gnav__list {
+    font-size: 18px;
+    margin: 1px;
+  }
+}
+
 .gnav__link {
   margin-left: 20px;
   color: #fefefe;
+}
+
+@media (max-width: 920px) {
+  .gnav__link {
+    margin: 8px;
+  }
 }
 
 .gnav__link:hover {

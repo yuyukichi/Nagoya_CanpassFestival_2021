@@ -52,10 +52,20 @@ $sp: 480px; // スマホ
         padding-top: 5%;
         margin: 0;
         margin-right: 2vw;
+        @include tab {}
+    }
+    &__list {
+        @include tab {
+            font-size: 18px;
+            margin: 1px;
+        }
     }
     &__link {
         margin-left: 20px;
         color: $font;
+        @include tab {
+            margin: 8px;
+        }
         &:hover {
             @include hover;
         }
