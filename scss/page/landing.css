@@ -377,6 +377,13 @@ html {
   background-position: center;
 }
 
+@media (max-width: 920px) {
+  .main__content#theme_image .content__image {
+    width: 100vw;
+    height: 105vh;
+  }
+}
+
 .main__content#event_about {
   height: 100vh;
   background-color: #1c2e3c;

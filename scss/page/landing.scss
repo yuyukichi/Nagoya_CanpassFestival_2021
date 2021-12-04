@@ -69,6 +69,10 @@ html {
                     width: 100vw;
                     height: 180vh;
                     background-position: center;
+                    @include tab {
+                        width: 100vw;
+                        height: 105vh;
+                    }
                 }
             }
         }
